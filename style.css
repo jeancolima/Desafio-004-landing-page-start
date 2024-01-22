@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #312D5D;
+    --secondary-color: #2825AE;
+    --third-color: #5C59DF;
+    --contrast-color: #F14C0E;
+    --pink-text: #B864BA;
+    --purple-background: #662F72;
+    --effect-background: #CFE4FF;
+    --white: #FFF;
+    --black: #000;
+    --gray: #EDEBF7;
+    /* Fonts */
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 100px;
+    width: 1000px;
+    margin-bottom: 5rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.logo a h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo a h1 span {
+    color: var(--contrast-color);
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.header-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.header-menu ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-menu-login {
+    color: var(--pink-text);
+    background-color: var(--gray);
+    border-radius: 8px;
+    width: 130px;
+    height: 50px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-menu-login:hover {
+    background-color: var(--third-color);
+    color: var(--white);
+}
+
+.main-text h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
+
+.main-text h2 span {
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    border: 3px solid var(--third-color);
+    color: var(--secondary-color);
+    background-color: var(--effect-background);
+    position: relative;
+}
+
+.main-text h2 span img {
+    width: 24px;
+    position: absolute;
+    bottom: -22px;
+    right: -23px;
+    z-index: 100;
+}
+
+.square-top {
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -83px;
+}
+
+.square-top::before {
+    content: '';
+    width: 8px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+
+.square-top::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: 301px;
+    top: 0px;
+}
+
+.square-bottom {
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+}
+
+.square-bottom::before {
+    content: '';
+    width: 8px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: 150px;
+    bottom: 0px;
+}
+
+.square-bottom::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--white);
+    display: block;
+    position: absolute;
+    left: 301px;
+    bottom: 0px;
+}
+
+.main-text p {
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-buttons button {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    color: var(--pink-text);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-free-trial {
+    background-color: var(--purple-background);
+}
+
+.btn-free-trial:hover {
+    background-color: var(--pink-text);
+    color: var(--white);
+}
+
+.btn-how-work {
+    background-color: var(--gray);
+}
+
+.btn-how-work:hover {
+    background-color: var(--pink-text);
+    color: var(--white);
+}
+
+.main-image {
+    width: 1200px;
+}
+
+.main-image img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin-top: 3rem;
+}
+
+.footer-container p {
+    color: var(--black);
+}
+
+.footer-container p a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
